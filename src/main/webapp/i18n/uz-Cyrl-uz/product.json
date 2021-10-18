@@ -1,0 +1,28 @@
+{
+  "posAdnimApp": {
+    "product": {
+      "home": {
+        "title": "Products",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Янги Product қўшиш",
+        "createOrEditLabel": "Productни таҳрирлаш",
+        "notFound": "No Products found"
+      },
+      "created": "Product {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- Product сақланди.",
+      "deleted": "{{ param }}- Product ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- Productни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "Product"
+      },
+      "id": "ID",
+      "name": "Name",
+      "code": "Code",
+      "type": "Type",
+      "directive": "Directive",
+      "status": "Status"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "posAdnimApp": {
+    "Status": {
+      "null": "",
+      "ACTIVE": "ACTIVE",
+      "DRAFT": "DRAFT"
+    }
+  }
+}

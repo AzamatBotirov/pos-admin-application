@@ -1,0 +1,29 @@
+{
+  "posAdnimApp": {
+    "marketBase": {
+      "home": {
+        "title": "Market Bases",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Market Base",
+        "createOrEditLabel": "Create or edit a Market Base",
+        "notFound": "No Market Bases found"
+      },
+      "created": "A new Market Base is created with identifier {{ param }}",
+      "updated": "A Market Base is updated with identifier {{ param }}",
+      "deleted": "A Market Base is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Market Base {{ id }}?"
+      },
+      "detail": {
+        "title": "Market Base"
+      },
+      "id": "ID",
+      "quantity": "Quantity",
+      "price": "Price",
+      "currentPrice": "Current Price",
+      "createDate": "Create Date",
+      "date": "Date",
+      "name": "Name"
+    }
+  }
+}

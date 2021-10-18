@@ -44,7 +44,9 @@
     "clientTheme": "none",
     "clientThemeVariant": "",
     "reactive": false,
-    "enableGradleEnterprise": false
+    "enableGradleEnterprise": false,
+    "entities": ["FileStorage", "MarketBase", "PaymentList", "Product"],
+    "lastLiquibaseTimestamp": 1634550585000
   },
   "git-provider": "GitHub",
   "git-company": "AzamatBotirov",

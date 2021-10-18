@@ -1,7 +1,7 @@
 <template>
   <div class="home row">
     <div class="col-md-3">
-      <span class="hipster img-fluid rounded"></span>
+      <span class=""></span>
     </div>
     <div class="col-md-9">
       <h1 class="display-4" v-text="$t('home.title')">Welcome, Java Hipster!</h1>

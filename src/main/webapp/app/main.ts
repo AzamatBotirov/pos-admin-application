@@ -28,6 +28,10 @@ import TranslationService from '@/locale/translation.service';
 import UserOAuth2Service from '@/entities/user/user.oauth2.service';
 /* tslint:disable */
 
+import FileStorageService from '@/entities/file-storage/file-storage.service';
+import MarketBaseService from '@/entities/market-base/market-base.service';
+import PaymentListService from '@/entities/payment-list/payment-list.service';
+import ProductService from '@/entities/product/product.service';
 // jhipster-needle-add-entity-service-to-main-import - JHipster will import entities services here
 
 /* tslint:enable */
@@ -86,6 +90,10 @@ new Vue({
 
     userOAuth2Service: () => new UserOAuth2Service(),
     translationService: () => translationService,
+    fileStorageService: () => new FileStorageService(),
+    marketBaseService: () => new MarketBaseService(),
+    paymentListService: () => new PaymentListService(),
+    productService: () => new ProductService(),
     // jhipster-needle-add-entity-service-to-main - JHipster will import entities services here
     accountService: () => accountService,
     alertService: () => new AlertService(),
