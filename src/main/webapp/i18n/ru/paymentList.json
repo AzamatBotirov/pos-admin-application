@@ -1,0 +1,26 @@
+{
+  "posAdnimApp": {
+    "paymentList": {
+      "home": {
+        "title": "Payment Lists",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Payment List",
+        "createOrEditLabel": "Создать или отредактировать Payment List",
+        "notFound": "Payment Lists не найдено"
+      },
+      "created": "Новый Payment List создан с идентификатором {{ param }}",
+      "updated": "Payment List обновлен с идентификатором {{ param }}",
+      "deleted": "Payment List удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Payment List {{ id }}?"
+      },
+      "detail": {
+        "title": "Payment List"
+      },
+      "id": "ID",
+      "quantity": "Quantity",
+      "summa": "Summa",
+      "name": "Name"
+    }
+  }
+}

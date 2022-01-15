@@ -1,0 +1,26 @@
+{
+  "posAdnimApp": {
+    "paymentList": {
+      "home": {
+        "title": "Payment Lists",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Янги Payment List қўшиш",
+        "createOrEditLabel": "Payment Listни таҳрирлаш",
+        "notFound": "No Payment Lists found"
+      },
+      "created": "Payment List {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- Payment List сақланди.",
+      "deleted": "{{ param }}- Payment List ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- Payment Listни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "Payment List"
+      },
+      "id": "ID",
+      "quantity": "Quantity",
+      "summa": "Summa",
+      "name": "Name"
+    }
+  }
+}

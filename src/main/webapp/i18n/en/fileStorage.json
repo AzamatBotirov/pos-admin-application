@@ -1,0 +1,31 @@
+{
+  "posAdnimApp": {
+    "fileStorage": {
+      "home": {
+        "title": "File Storages",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new File Storage",
+        "createOrEditLabel": "Create or edit a File Storage",
+        "notFound": "No File Storages found"
+      },
+      "created": "A new File Storage is created with identifier {{ param }}",
+      "updated": "A File Storage is updated with identifier {{ param }}",
+      "deleted": "A File Storage is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete File Storage {{ id }}?"
+      },
+      "detail": {
+        "title": "File Storage"
+      },
+      "id": "ID",
+      "fileName": "File Name",
+      "extension": "Extension",
+      "fileSize": "File Size",
+      "hashId": "Hash Id",
+      "contentType": "Content Type",
+      "uploadPath": "Upload Path",
+      "fileStorageStatus": "File Storage Status",
+      "name": "Name"
+    }
+  }
+}

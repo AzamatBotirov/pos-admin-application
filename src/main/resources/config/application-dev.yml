@@ -55,7 +55,8 @@ spring:
 
 server:
   port: 8080
-
+upload:
+  folder: D:/projects/pos-admin-application/upload
 # ===================================================================
 # JHipster specific properties
 #

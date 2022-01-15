@@ -1,0 +1,31 @@
+{
+  "posAdnimApp": {
+    "fileStorage": {
+      "home": {
+        "title": "File Storages",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Янги File Storage қўшиш",
+        "createOrEditLabel": "File Storageни таҳрирлаш",
+        "notFound": "No File Storages found"
+      },
+      "created": "File Storage {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- File Storage сақланди.",
+      "deleted": "{{ param }}- File Storage ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- File Storageни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "File Storage"
+      },
+      "id": "ID",
+      "fileName": "File Name",
+      "extension": "Extension",
+      "fileSize": "File Size",
+      "hashId": "Hash Id",
+      "contentType": "Content Type",
+      "uploadPath": "Upload Path",
+      "fileStorageStatus": "File Storage Status",
+      "name": "Name"
+    }
+  }
+}

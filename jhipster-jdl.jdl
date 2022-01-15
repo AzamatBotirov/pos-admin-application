@@ -1,0 +1,56 @@
+
+
+/**
+ * FileStorage entity.
+ * @author The JHipster team.
+ */
+entity FileStorage {
+	fileName String,
+    extension String,
+    fileSize Long,
+    hashId String,
+    contentType String,
+    uploadPath String,
+    fileStorageStatus FileStorageStatus
+}
+
+enum FileStorageStatus {
+    ACTIVE, DRAFT
+}
+
+entity MarketBase{
+quantity String,
+price BigDecimal,
+currentPrice BigDecimal,
+createDate ZonedDateTime,
+date ZonedDateTime
+}
+
+entity PaymentList{
+quantity Integer
+
+summa BigDecimal
+}
+
+entity Product{
+name String,
+code String,
+type ProductType,
+directive ProductDirective,
+status Status
+}
+enum ProductType{
+KG, L, DONA
+}
+enum ProductDirective{
+ MEVA, SABZAVOT, SHIRINLIK, GOSHT, NON, BOSHQA
+}
+enum Status{
+ACTIVE, DRAFT
+}
+
+relationship ManyToOne {
+  PaymentList{name} to Product
+  MarketBase{name} to Product
+  FileStorage{name} to Product
+}

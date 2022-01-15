@@ -1,0 +1,39 @@
+{
+  "name": "Product",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "ProductType",
+      "fieldValues": "KG,L,DONA"
+    },
+    {
+      "fieldName": "directive",
+      "fieldType": "ProductDirective",
+      "fieldValues": "MEVA,SABZAVOT,SHIRINLIK,GOSHT,NON,BOSHQA"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "Status",
+      "fieldValues": "ACTIVE,DRAFT"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "product",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20211018094945"
+}

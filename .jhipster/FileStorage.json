@@ -1,0 +1,53 @@
+{
+  "name": "FileStorage",
+  "fields": [
+    {
+      "fieldName": "fileName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "extension",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fileSize",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "hashId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "contentType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "uploadPath",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fileStorageStatus",
+      "fieldType": "FileStorageStatus",
+      "fieldValues": "ACTIVE,DRAFT"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "product",
+      "otherEntityRelationshipName": "fileStorage",
+      "relationshipName": "name"
+    }
+  ],
+  "javadoc": "FileStorage entity.\\n@author The JHipster team.",
+  "entityTableName": "file_storage",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20211018094942"
+}

@@ -1,0 +1,29 @@
+{
+  "posAdnimApp": {
+    "marketBase": {
+      "home": {
+        "title": "Market Bases",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Янги Market Base қўшиш",
+        "createOrEditLabel": "Market Baseни таҳрирлаш",
+        "notFound": "No Market Bases found"
+      },
+      "created": "Market Base {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- Market Base сақланди.",
+      "deleted": "{{ param }}- Market Base ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- Market Baseни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "Market Base"
+      },
+      "id": "ID",
+      "quantity": "Quantity",
+      "price": "Price",
+      "currentPrice": "Current Price",
+      "createDate": "Create Date",
+      "date": "Date",
+      "name": "Name"
+    }
+  }
+}
