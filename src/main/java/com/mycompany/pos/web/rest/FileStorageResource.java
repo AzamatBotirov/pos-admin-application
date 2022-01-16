@@ -62,7 +62,7 @@ public class FileStorageResource {
         FileStorage fileStorage = fileStorageService.findByHashId(hashId);
         return ResponseEntity
             .ok()
-            .header(HttpHeaders.CONTENT_DISPOSITION, "inline; fileName=\"" + URLEncoder.encode(fileStorage.getFileName()))
+            .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; fileName=\"" + URLEncoder.encode(fileStorage.getHashId()))
             .contentType(MediaType.parseMediaType(fileStorage.getContentType()))
             .contentLength(fileStorage.getFileSize())
             .body(new FileUrlResource(String.format("%s/%s", uploadFolder, fileStorage.getUploadPath())));
@@ -108,7 +108,7 @@ public class FileStorageResource {
     /**
      * {@code PUT  /file-storages/:id} : Updates an existing fileStorage.
      *
-     * @param id the id of the fileStorage to save.
+     * @param id          the id of the fileStorage to save.
      * @param fileStorage the fileStorage to update.
      * @return the {@link ResponseEntity} with status {@code 200 (OK)} and with body the updated fileStorage,
      * or with status {@code 400 (Bad Request)} if the fileStorage is not valid,
@@ -142,7 +142,7 @@ public class FileStorageResource {
     /**
      * {@code PATCH  /file-storages/:id} : Partial updates given fields of an existing fileStorage, field will ignore if it is null
      *
-     * @param id the id of the fileStorage to save.
+     * @param id          the id of the fileStorage to save.
      * @param fileStorage the fileStorage to update.
      * @return the {@link ResponseEntity} with status {@code 200 (OK)} and with body the updated fileStorage,
      * or with status {@code 400 (Bad Request)} if the fileStorage is not valid,

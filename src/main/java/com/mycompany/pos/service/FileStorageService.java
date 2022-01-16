@@ -3,9 +3,11 @@ package com.mycompany.pos.service;
 import com.mycompany.pos.domain.FileStorage;
 import com.mycompany.pos.domain.enumeration.FileStorageStatus;
 import com.mycompany.pos.repository.FileStorageRepository;
+import com.mycompany.pos.web.rest.errors.BadRequestAlertException;
 import java.io.File;
 import java.io.IOException;
 import java.util.Date;
+import lombok.extern.slf4j.Slf4j;
 import org.hashids.Hashids;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -13,6 +15,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
+@Slf4j
 @Service
 public class FileStorageService {
 
@@ -33,6 +36,7 @@ public class FileStorageService {
         fileStorage.setFileName(multipartFile.getOriginalFilename());
         fileStorage.setExtension(getExt(multipartFile.getOriginalFilename()));
         fileStorage.setFileSize(multipartFile.getSize());
+        fileStorage.setContentType(multipartFile.getContentType());
         fileStorage.setFileStorageStatus(FileStorageStatus.DRAFT);
         fileStorageRepository.save(fileStorage);
 
@@ -47,7 +51,7 @@ public class FileStorageService {
             String.format("%s/upload_files/%d/%d/%d", this.uploadFolder, 1900 + now.getYear(), 1 + now.getMonth(), now.getDate())
         );
         if (!uploadFolder.exists() && uploadFolder.mkdirs()) {
-            System.out.println("Papkalar yaratildi @######@");
+            log.info("Papkalar yaratildi @######@");
         }
 
         fileStorage.setHashId(hashids.encode(fileStorage.getId()));
@@ -108,6 +112,12 @@ public class FileStorageService {
                 ext = fileName.substring(bot + 1);
             }
         }
-        return ext;
+        assert ext != null;
+        if (ext.toLowerCase().equals("jpg")) {
+            return ext;
+        }
+
+        log.info("Rasm formati jpg bo`lishi kerak!");
+        throw new BadRequestAlertException("Rasm formati jpg bo`lishi kerak!", "FileStorage", "String");
     }
 }

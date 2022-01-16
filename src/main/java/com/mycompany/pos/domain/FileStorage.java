@@ -4,12 +4,15 @@ import com.mycompany.pos.domain.enumeration.FileStorageStatus;
 import io.swagger.annotations.ApiModel;
 import java.io.Serializable;
 import javax.persistence.*;
+import liquibase.pro.packaged.S;
+import lombok.Data;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 /**
  * FileStorage entity.\n@author The JHipster team.
  */
+@Data
 @ApiModel(description = "FileStorage entity.\n@author The JHipster team.")
 @Entity
 @Table(name = "file_storage")
@@ -155,18 +158,18 @@ public class FileStorage implements Serializable {
         this.fileStorageStatus = fileStorageStatus;
     }
 
-    public Product getName() {
-        return this.name;
-    }
-
-    public void setName(Product product) {
-        this.name = product;
-    }
-
-    public FileStorage name(Product product) {
-        this.setName(product);
-        return this;
-    }
+    //    public String getName() {
+    //        return this.name;
+    //    }
+    //
+    //    public void setName(String s) {
+    //        this.name = product;
+    //    }
+    //
+    //    public FileStorage name(S product) {
+    //        this.setName(product);
+    //        return this;
+    //    }
 
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here
 
